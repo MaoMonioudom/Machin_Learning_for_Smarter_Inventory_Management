@@ -1,79 +1,18 @@
-# GoCart - E-commerce Website
+# React + Vite
 
-A modern, responsive e-commerce website built with **React** and **Vite**, featuring multiple pages for customers, sellers, and admin, with smooth navigation, product listing, and Google OAuth placeholders.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## **Features**
----
-- Landing page with hero section and introduction
-- Customer home page with banner and product listing
-- Category navigation with smooth scrolling
-- Customer navigation bar with search and account icons
-- Login and Register pages with Google OAuth placeholder
-- Footer with multiple columns
-- Responsive design
-- Sticky navigation for easy access
-- Product detail pages
----
+Currently, two official plugins are available:
 
-## **Tech Stack**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **Frontend:** React (JSX)
-- **Bundler / Dev Server:** Vite
-- **Routing:** React Router DOM
-- **Icons:** React Icons
-- **Styling:** CSS (plain)
-- **Version Control:** Git & GitHub
-- **Authentication:** Google OAuth placeholder (can integrate Firebase later)
+## React Compiler
 
----
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-## **Installation**
+Note: This will impact Vite dev & build performances.
 
-1. Clone the repository:
+## Expanding the ESLint configuration
 
-```bash
-git clone https://github.com/MaoMonioudom/ecommerce.git
-```
-2. Navigate into project folder
-```bash
-cd ecommerce
-```
-3. Install Dependencies
-```bash
-npm install
-```
-4. start server
-```bash
-npm run dev
-```
-5. Open the app in browser
-
-## Folder Structure
-```
-ecommerce/
-├─ public/             
-├─ src/
-│  ├─ assets/             
-│  │  ├─ CategoryOne/
-│  │  ├─ CategoryTwo/
-│  │  └─ ...
-│  ├─ components/        
-│  │  ├─ Nav/
-│  │  ├─ NavCustomer/
-│  │  ├─ CategoryNav/
-│  │  ├─ ProductList/
-│  │  ├─ ProductCard/
-│  │  └─ Footer/
-│  ├─ pages/
-│  │  ├─ Landing/
-│  │  ├─ HomeCustomer/
-│  │  ├─ Products/
-│  │  ├─ Login/
-│  │  └─ Register/
-│  ├─ data/                
-│  ├─ App.jsx
-│  └─ main.jsx
-├─ .gitignore
-├─ package.json
-└─ README.md
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

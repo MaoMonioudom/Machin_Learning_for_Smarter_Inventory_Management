@@ -1,142 +1,205 @@
-/* Banner / Hero section */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Banner */
 .home-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: conic-gradient(from 82.48deg, #D9D9D9 0deg, #737373 360deg);
   text-align: center;
-  background-color: #fff;  /* white banner */
-  color: #000;
-  padding: 6rem 2rem;
+  padding: 120px 20px;
+  color: #fff;
 }
 
 .home-banner h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .home-banner p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
+  margin-bottom: 30px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.home-banner button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #000;
+.home-button {
+  background: #000;
   color: #fff;
   border: none;
-  border-radius: 6px;
+  padding: 15px 40px;
+  border-radius: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.home-banner button:hover {
-  background-color: #333;
-}
-
-/* About boxes */
-.about-section {
+/* Features */
+.home-features {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  background-color: #fff;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 50px;
 }
 
-.about-box {
-  background-color: #f5f5f5;  /* light gray */
-  padding: 2rem;
-  border-radius: 8px;
-  flex: 1 1 200px;
+.feature-card {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #8C8C8C;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-/* Activity boxes (different color) */
-.activity-section {
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.home-stats {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  background-color: #e0e0e0;  /* darker gray for contrast */
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #737373;
 }
 
-.activity-box {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  flex: 1 1 200px;
-  text-align: center;
-}
-
-/* Survey section */
-/* Survey / Feedback Section */
-.survey-section {
-  padding: 4rem 2rem;
-  background-color: #fff;  /* white background */
-  text-align: center;
-  position: relative;
-}
-
-.survey-section h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-/* Feedback cards container */
-.feedback-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  position: relative;
-}
-
-/* Individual feedback card */
-.feedback-card {
-  background-color: #f5f5f5;   /* light gray card */
-  padding: 2rem;
-  border-radius: 12px;
+.stat-card {
+  background-color: transparent;
+  border: 1px solid #8C8C8C;
+  box-shadow: 6px 6px 6px 4px #000000;
+  border-radius: 20px;
   width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  top: 0;
-  transition: transform 0.3s;
-}
-
-.feedback-card:hover {
-  transform: translateY(-10px);   /* lift effect */
-}
-
-/* Optional overlapping effect */
-.feedback-card:nth-child(2) {
-  margin-top: 20px;
-}
-
-.feedback-card:nth-child(3) {
-  margin-top: 40px;
-}
-
-/* Feedback content */
-.feedback-card p {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.feedback-card h4 {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #000;
-}
-
-/* Footer */
-.footer {
-  padding: 2rem;
-  background-color: #000;
   color: #fff;
+}
+
+.stat-number {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1px;
   text-align: center;
+}
+
+/* Testimonials */
+/* Testimonials Section */
+.home-testimonials {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.testimonial-card {
+  width: 531px;
+  min-height: 175px;
+  border: 1px solid #8c8c8c;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: rotate(-5deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  background-color: #fff;
+  box-shadow: 6px 6px 6px 4px rgba(0,0,0,0.2);
+}
+
+/* User Name */
+.testimonial-user {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center; /* Ensure text is centered */
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  text-align: center;
+}
+
+
+/* Pricing */
+.home-pricing {
+  background: #d9d9d9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 80px 50px;
+}
+
+.pricing-card {
+  background: #ffffff;
+  flex: 1 1 250px;
+  max-width: 300px;
+  border: 1px solid #8C8C8C;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.pricing-card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pricing-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.pricing-card button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .home-features, .home-testimonials, .home-pricing {
+    flex-direction: column;
+    align-items: center;
+  }
 }

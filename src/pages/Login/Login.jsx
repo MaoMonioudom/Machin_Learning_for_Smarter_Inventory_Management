@@ -22,7 +22,7 @@ function Login() {
     if (email === customerAccount.email && password === customerAccount.password) {
       navigate("/homecustomer");
     } else if (email === sellerAccount.email && password === sellerAccount.password) {
-      navigate("/homeseller");
+      navigate("/seller/account");
     } else if (email === adminAccount.email && password === adminAccount.password) {
       navigate("/homeadmin");
     } else {

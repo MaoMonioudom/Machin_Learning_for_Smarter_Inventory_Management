@@ -1,21 +1,26 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import Logo from "../../assets/images/logo.png";
 import "./Landing.css";
 
-function Landing() {
+const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="landing">
-      <div className="landing-content">
-        <h1>Gocart</h1>
-        <h2>Smarter Shopping, Smarter Selling</h2>
-        <p>All-in-one marketplace for buyers and sellers.</p>
-        <button onClick={() => navigate("/home")}>
-          Enter Gocart Now
-        </button>
-      </div>
-    </section>
+    <div className="landing-container">
+      <img src={Logo} alt="GoCart Logo" className="landing-logo" />
+      <h1 className="landing-title">Smarter Shopping, Smarter Selling</h1>
+      <p className="landing-text">
+        Predictive insights, personalized recommendations, and seamless e-commerce experiences - all in one platform.
+      </p>
+      <button
+        className="landing-button"
+        onClick={() => navigate("/home")}
+      >
+        Enter GoCart Now
+      </button>
+    </div>
   );
-}
+};
 
 export default Landing;

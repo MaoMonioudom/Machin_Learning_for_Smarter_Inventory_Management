@@ -48,7 +48,8 @@ npm run dev
 ```
 5. Open the app in browser
 
-##Folder Structure
+## Folder Structure
+```
 ecommerce/
 ├─ public/             
 ├─ src/
@@ -75,4 +76,4 @@ ecommerce/
 ├─ .gitignore
 ├─ package.json
 └─ README.md
-
+```

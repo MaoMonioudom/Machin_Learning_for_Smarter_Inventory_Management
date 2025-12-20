@@ -1,0 +1,142 @@
+/* Banner / Hero section */
+.home-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;  /* white banner */
+  color: #000;
+  padding: 6rem 2rem;
+}
+
+.home-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.home-banner button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home-banner button:hover {
+  background-color: #333;
+}
+
+/* About boxes */
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.about-box {
+  background-color: #f5f5f5;  /* light gray */
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+/* Activity boxes (different color) */
+.activity-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #e0e0e0;  /* darker gray for contrast */
+}
+
+.activity-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+/* Survey section */
+/* Survey / Feedback Section */
+.survey-section {
+  padding: 4rem 2rem;
+  background-color: #fff;  /* white background */
+  text-align: center;
+  position: relative;
+}
+
+.survey-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Feedback cards container */
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Individual feedback card */
+.feedback-card {
+  background-color: #f5f5f5;   /* light gray card */
+  padding: 2rem;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+  top: 0;
+  transition: transform 0.3s;
+}
+
+.feedback-card:hover {
+  transform: translateY(-10px);   /* lift effect */
+}
+
+/* Optional overlapping effect */
+.feedback-card:nth-child(2) {
+  margin-top: 20px;
+}
+
+.feedback-card:nth-child(3) {
+  margin-top: 40px;
+}
+
+/* Feedback content */
+.feedback-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.feedback-card h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}

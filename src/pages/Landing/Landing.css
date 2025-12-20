@@ -1,0 +1,68 @@
+/* Full-screen landing section */
+.landing {
+  display: flex;               /* flexbox for centering */
+  justify-content: center;     /* horizontal center */
+  align-items: center;         /* vertical center */
+  height: 100vh;               /* full viewport height */
+  background-color: #fff;      /* white background */
+  color: #000;                 /* default text black */
+  padding: 1rem;
+}
+
+/* Centered content with fixed width */
+.landing-content {
+  width: 600px;
+  text-align: center;
+}
+
+/* Title */
+.landing-content h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: #000;                 /* black text */
+}
+
+/* Subtitle */
+.landing-content h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #333;                 /* slightly lighter black */
+}
+
+/* Description */
+.landing-content p {
+  font-size: 1.1rem;
+  margin: 1rem 0 2rem 0;
+  color: #555;                 /* gray for paragraph */
+}
+
+/* Button */
+.landing-content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #000;      /* black button */
+  color: #fff;                 /* white text on button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landing-content button:hover {
+  background-color: #333;      /* slightly lighter black on hover */
+}
+
+/* Responsive for mobile */
+@media (max-width: 640px) {
+  .landing-content {
+    width: 90%;              /* shrink width on small screens */
+  }
+
+  .landing-content h1 {
+    font-size: 2rem;
+  }
+
+  .landing-content h2 {
+    font-size: 1.2rem;
+  }
+}

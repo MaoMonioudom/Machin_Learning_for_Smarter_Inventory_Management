@@ -1,0 +1,58 @@
+.nav-customer {
+  position: fixed;       /* stick on top */
+  top: 0;
+  left: 0;               /* make it start from the left */
+  width: 100%;           /* full width */
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box; /* include padding in width */
+}
+
+/* Logo */
+.logo,img {
+  height: 30px;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+/* Nav links */
+.nav-customer .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-customer .nav-links button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.2s;
+}
+
+.nav-customer .nav-links button:hover {
+  color: #555;
+}
+
+/* Icons */
+.nav-customer .nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-customer .nav-icons .icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.2s;
+}
+
+.nav-customer .nav-icons .icon:hover {
+  color: #555;
+}

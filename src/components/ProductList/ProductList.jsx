@@ -11,6 +11,7 @@ function ProductList({ products }) {
           name={p.name}
           brand={p.brand}
           price={p.price}
+          discount={p.discount}
         />
       ))}
     </div>

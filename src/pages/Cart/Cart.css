@@ -1,0 +1,220 @@
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* footer sticks to bottom */
+  background-color: #f8f8f8;
+  padding-top: 5rem; /* space for navbar */
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper for main content, centered and max width */
+.cart-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1; /* take remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-content-wrapper h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* Cart main content: two columns */
+.cart-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left column: product list */
+.cart-products {
+  flex: 2;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  max-height: 600px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Product item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item div {
+  flex-grow: 1;
+}
+
+.cart-item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cart-item p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.cart-item button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-item button:hover {
+  background-color: #e33b3f;
+}
+
+/* Right column: invoice summary */
+.cart-summary {
+  flex: 1;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart-summary h3 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Summary row */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.summary-total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.checkout-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.qty-control button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  color: black;
+  padding: 5px;
+}
+
+.item-total {
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #e63946;
+  cursor: pointer;
+}
+/* Wrapper for main content, centered and max width */
+.cart-content-wrapper {
+  max-width: 1400px; /* increased from 1200px */
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1; /* take remaining space for footer */
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* spacing between heading and content */
+}
+
+/* Cart main content: two columns */
+.cart-content {
+  display: flex;
+  gap: 30px; /* space between left and right */
+  flex-wrap: wrap;
+}
+
+/* Left column: product list */
+.cart-products {
+  flex: 3; /* make left column wider */
+  min-width: 600px; /* prevent collapsing too much */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 700px; /* can scroll if too long */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Right column: invoice summary */
+.cart-summary {
+  flex: 1.2; /* slightly wider than before */
+  min-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1024px) {
+  .cart-content {
+    flex-direction: column;
+  }
+}
+/* 
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .cart-content {
+    flex-direction: column;
+  }
+}

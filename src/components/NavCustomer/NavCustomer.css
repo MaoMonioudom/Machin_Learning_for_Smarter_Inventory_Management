@@ -1,8 +1,8 @@
 .nav-customer {
-  position: fixed;       /* stick on top */
+  position: fixed;
   top: 0;
-  left: 0;               /* make it start from the left */
-  width: 100%;           /* full width */
+  left: 0;
+  width: 100%;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   padding: 0.5rem 2rem;
   background-color: #fff; 
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  box-sizing: border-box; /* include padding in width */
+  box-sizing: border-box;
 }
 
 /* Logo */
@@ -55,4 +55,53 @@
 
 .nav-customer .nav-icons .icon:hover {
   color: #555;
+}
+
+/* ===== Search Wrapper ===== */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.search-wrapper input {
+  padding: 5px 10px 5px 30px; /* leave space for icon inside */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 180px;
+  transition: width 0.3s;
+  font-size: 0.9rem;
+}
+
+.search-wrapper input:focus {
+  width: 220px;
+  border-color: #007bff;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  color: #999;
+  pointer-events: none; /* allow clicking on input */
+  font-size: 1.2rem;
+}
+
+/* ===== Search results dropdown ===== */
+.search-card-dropdown {
+  position: absolute;
+  top: 3.2rem; /* just below navbar */
+  left: 0;
+  right: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #fff;
+  z-index: 10000;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
 }

@@ -1,0 +1,63 @@
+.customer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* Logo */
+.customer-logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Center links */
+.customer-links {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 140px;
+}
+
+/* Right section */
+.customer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Profile button */
+.profile-btn {
+  font-size: 24px;
+  cursor: pointer;
+}

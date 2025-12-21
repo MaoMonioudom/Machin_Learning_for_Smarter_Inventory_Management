@@ -1,0 +1,43 @@
+/* CategoryNav container */
+.nav-wrapper {
+  position: fixed;
+  top: 0; /* adjust based on NavCustomer height */
+  z-index: 99;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.category-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  left: 0;
+  width: 100%;
+  padding: 7rem 0 1rem 0 ;
+  overflow-x: auto;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: -2rem;
+  z-index: 99;
+} /* Box style for each category button */
+.category-nav button {
+  padding: 0.5rem 1rem; /* make it look like a box */
+  border: 1px solid #000; /* black border */
+  border-radius: 20px; /* rounded corners */
+  background-color: #fff; /* white box */
+  color: #000;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+} /* Hover effect */
+.category-nav button:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+.category-nav button.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}

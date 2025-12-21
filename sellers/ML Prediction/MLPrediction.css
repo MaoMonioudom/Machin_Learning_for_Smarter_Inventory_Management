@@ -1,0 +1,260 @@
+.ml-prediction-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 1px;
+}
+
+/* Header */
+.description {
+  max-width: 720px;
+  padding: 20px 80px;
+  /* margin: 120px auto 40px; */
+  text-align: left;
+}
+
+.title {
+  font-weight:bold;
+  font-size: 45px;
+  line-height: 52px;
+  color: #000;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  color: #737373;
+  margin-top: 8px;
+}
+
+/* Items Container */
+.items-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.status {
+  position: absolute;
+  width: 87px;
+  height: 27px;
+  left: 130px; /* adjust based on parent */
+  top: 27px;   /* adjust based on parent */
+  background: rgba(140, 140, 140, 0.3);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Item Card */
+.item-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.item-category {
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  margin-top: 2px;
+}
+
+.item-image {
+  width: 100px;   /* bigger width */
+  height: 100%;  /* bigger height */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Section Label */
+.section-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #525252;
+  margin-top: 10px;
+}
+
+/* Stock Bar */
+.stock-bar-container {
+  position: relative;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.stock-bar {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.3s;
+}
+
+.stock-label {
+  font-size: 12px;
+  color: #525252;
+  text-align: right;
+  margin-top: 3px;
+}
+
+/* Prediction Boxes */
+.prediction-boxes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.prediction-box {
+  flex: 1;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.box-title {
+  font-size: 12px;
+  color: #737373;
+  margin-bottom: 3px;
+}
+
+.box-value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Prediction Factors */
+.prediction-factors-table {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.factor {
+  background: #f2f2f2;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.factor-title {
+  font-size: 12px;
+  color: #737373;
+}
+
+.factor-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 2px;
+}
+
+/* Update Button */
+.update-stock-btn {
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.update-stock-btn:hover {
+  background: #333;
+}
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.modal-content input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.modal-update-btn {
+  background: #4caf50;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-update-btn:hover {
+  background: #45a049;
+}
+
+.modal-cancel-btn {
+  background: #f44336;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-cancel-btn:hover {
+  background: #d32f2f;
+}

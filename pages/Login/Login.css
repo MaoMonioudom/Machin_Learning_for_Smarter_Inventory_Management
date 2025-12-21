@@ -1,0 +1,102 @@
+/* Container */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #fff;  /* white background */
+  color: #000;
+  padding: 2rem;
+}
+
+/* Form */
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Heading */
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+/* Labels */
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Inputs */
+.auth-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Regular Login/Register buttons */
+.auth-form button.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #000;   /* black button */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-form button.submit-btn:hover {
+  background-color: #333;
+}
+
+/* Google button */
+.auth-form button.google-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fff !important;       /* white background */
+  color: #000 !important;                  /* black text */
+  border: 1px solid #000;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-form button.google-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Footer link section */
+.auth-footer {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.auth-footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  color: #555;
+}

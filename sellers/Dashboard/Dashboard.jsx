@@ -49,21 +49,21 @@ const products = [
   {
     name: "Dried White Noodles Egg",
     category: "Food & Drinks",
-    price: "$400.00",
+    price: "$10.00",
     status: "Active",
     image: Noodles,
   },
   {
     name: "Kirisu Milk Full Cream",
     category: "Food & Drinks",
-    price: "$380.00",
+    price: "$5.00",
     status: "Active",
     image: Milk,
   },
   {
     name: "Khmer Banana",
     category: "Food & Drinks",
-    price: "$0.00",
+    price: "$5.00",
     status: "Active",
     image: Banana,
   },
@@ -185,22 +185,36 @@ const Dashboard = () => {
 
 
           {/* Popular Products */}
+{/* Popular Products */}
           <div className="popular-products">
             <h2>Popular Products</h2>
-            <div className="product-list">
+
+            <div className="popular-list">
               {products.map((p, index) => (
-              <div className="product-card" key={index}>
-                <img src={p.image} alt={p.name} />
-                <div className="product-info">
-                  <p className="product-name">{p.name}</p>
-                  <p className="product-category">{p.category}</p>
+                <div className="popular-row" key={index}>
+                  {/* Left: Image */}
+                  <div className="popular-image">
+                    <img src={p.image} alt={p.name} />
+                  </div>
+
+                  {/* Middle: Info */}
+                  <div className="popular-info">
+                    <p className="popular-name">{p.name}</p>
+                    <p className="popular-category">{p.category}</p>
+                  </div>
+
+                  {/* Right: Price + Status */}
+                  <div className="popular-meta">
+                    <p className="popular-price">{p.price}</p>
+                    <span className={`popular-status ${p.status.toLowerCase()}`}>
+                      {p.status}
+                    </span>
+                  </div>
                 </div>
-                <p className="product-price">{p.price}</p>
-                <p className="product-status">{p.status}</p>
-              </div>
               ))}
             </div>
           </div>
+
         </div>
 
         {/* Monthly Product Comparison */}

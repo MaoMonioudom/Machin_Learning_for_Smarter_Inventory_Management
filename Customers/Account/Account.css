@@ -81,34 +81,36 @@
 .account-buttons {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
   margin-top: 15px;
 }
 
+.register-btn,
+.logout-btn {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  border: 1px solid #000; /* same border for both */
+}
+
+/* Register Button */
 .register-btn {
   background-color: #fff;
   color: #000;
-    border: 1px solid #000;
-  /* border: none; */
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  flex: 1;
 }
 
 .register-btn:hover {
   background-color: #f5f5f5;
 }
 
+/* Logout Button */
 .logout-btn {
   background-color: #000;
   color: #fff;
-  border: 1px solid #000;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  flex: 1;
 }
 
 .logout-btn:hover {

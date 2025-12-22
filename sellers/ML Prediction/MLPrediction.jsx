@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SellerNav from "../SellerNav/SellerNav";
 import "./MLPrediction.css";
-import iPhone from "../../assets/images/IPhone14.png";
+import iPad from "../../assets/images/ipad.jpg";
 import Banana from "../../assets/images/banana.png";
 
 // Stock Bar Component
@@ -140,12 +140,12 @@ const PredictionItemCard = ({ item, index, onUpdateStock }) => {
 const MLPrediction = () => {
   const [items, setItems] = useState([
     {
-      name: "Apple iPhone 14",
+      name: "iPad",
       category: "Electronics",
       currentStock: 5,
       recommendedStock: 10,
       predictedDemand: 5,
-      image: iPhone,
+      image: iPad,
       seasonality: "Normal Season",
       events: "None",
       salesTrend: "Stable",

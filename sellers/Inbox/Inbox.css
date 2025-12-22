@@ -1,32 +1,35 @@
+/* General Page */
 .inbox-page {
   font-family: 'Roboto', sans-serif;
   background: #f7f7f7;
   min-height: 100vh;
-
+  padding-bottom: 40px;
 }
 
-/* Container for messages list and detail view */
+/* Container */
 .inbox-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 80px;
+  padding: 20px 50px;
 }
 
 /* Messages List */
 .messages-list {
-  width: 300px;
+  flex: 0 0 300px;
   background: #fff;
   border-radius: 10px;
-  overflow-y: auto;
-  max-height: 80vh;
   border: 1px solid #ccc;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .message-item {
   padding: 16px;
   border-bottom: 1px solid #eee;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
 }
 
 .message-item:hover {
@@ -38,22 +41,22 @@
 }
 
 .message-item.unread .message-subject {
-  font-weight: bold;
+  font-weight: 600;
+  color: #000;
 }
 
 .message-sender {
   font-size: 14px;
-  color: #333;
+  color: #555;
 }
 
 .message-subject {
   font-size: 16px;
   margin-top: 4px;
-  color: #000;
 }
 
 .message-preview {
-  font-size: 12px;
+  font-size: 13px;
   color: #777;
   margin-top: 2px;
 }
@@ -62,7 +65,7 @@
   font-size: 11px;
   color: #aaa;
   text-align: right;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 /* Message Detail */
@@ -70,19 +73,21 @@
   flex: 1;
   background: #fff;
   border-radius: 10px;
+  border: 1px solid #ccc;
   padding: 24px;
   min-height: 400px;
-  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .message-detail h2 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 12px;
 }
 
 .message-detail p {
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .no-message {
@@ -90,4 +95,22 @@
   color: #777;
   text-align: center;
   margin-top: 100px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .inbox-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .messages-list {
+    width: 100%;
+    max-height: 300px;
+  }
+
+  .message-detail {
+    width: 100%;
+    min-height: 300px;
+  }
 }

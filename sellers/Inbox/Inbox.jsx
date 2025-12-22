@@ -19,7 +19,22 @@ const messagesMock = [
     time: "9:30 AM",
     read: true,
   },
-  // Add more messages here
+  {
+    id: 3,
+    sender: "Michael Brown",
+    subject: "Invoice Received",
+    preview: "Please find attached your invoice...",
+    time: "Yesterday",
+    read: false,
+  },
+  {
+    id: 4,
+    sender: "Alice Johnson",
+    subject: "Product Inquiry",
+    preview: "Can you provide more details about...",
+    time: "Dec 20",
+    read: true,
+  },
 ];
 
 const Inbox = () => {
@@ -54,7 +69,8 @@ const Inbox = () => {
             <>
               <h2>{selectedMessage.subject}</h2>
               <p><strong>From:</strong> {selectedMessage.sender}</p>
-              <p>{selectedMessage.preview} (full content goes here)</p>
+              <p>{selectedMessage.preview}</p>
+              <p><em>Full message content goes here...</em></p>
             </>
           ) : (
             <p className="no-message">Select a message to view details</p>
@@ -66,4 +82,3 @@ const Inbox = () => {
 };
 
 export default Inbox;
-

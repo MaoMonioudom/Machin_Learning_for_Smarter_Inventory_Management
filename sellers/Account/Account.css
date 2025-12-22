@@ -97,23 +97,29 @@
   border-radius: 10px;
   font-size: 20px;
   font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.save-btn:hover {
+  background: rgba(217, 217, 217, 0.8);
+}
+
 /* Logout Button */
 .logout-btn {
-  margin-top: 20px;
-  margin-left: 50px;
-  width: 221px;
-  height: 69px;
-  background: #979494; /* red color for logout */
+  margin-top: 30px;          /* same as save */
+  width: 221px;               /* same as save */
+  height: 69px;               /* same as save */
+  background: #979494;        /* grey background */
   color: white;
   border: none;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 500;
+  border-radius: 10px;        /* same radius as save */
+  font-size: 20px;            /* same font size */
+  font-weight: 500;           /* slightly bolder for contrast */
   cursor: pointer;
   transition: 0.3s;
 }
 
 .logout-btn:hover {
-  background: #d9363e;
+  background: #d9363e;        /* hover color */
 }

@@ -5,6 +5,11 @@ import "./Product.css";
 import iPad from "../../assets/images/ipad.jpg";
 import Shirt from "../../assets/images/shirt.jpg";
 import Book from "../../assets/images/book.jpg";
+import Sock from "../../assets/images/socks.jpg";
+import Noodles from "../../assets/images/noodles.jpg";
+import Milk from "../../assets/images/milk.jpg";
+import Banana from "../../assets/images/banana.png";
+
 
 /* PRODUCT CARD */
 const ProductCard = ({ product, onEdit, onDelete, onPromotion }) => (
@@ -123,6 +128,46 @@ const Product = () => {
       rating: 3,
       discount: "0%",
       image: Book,
+    },
+    {
+      id: 4,
+      name: "Socks",
+      category: "Fashion & Clothing",
+      price: 450.00,
+      stock: 1900,
+      rating: 3,
+      discount: "0%",
+      image: Sock,
+    },
+    {
+      id: 4,
+      name: "Dried White Noodles Egg",
+      category: "Food & Drinks",
+      price: 10.00,
+      stock: 1900,
+      rating: 3,
+      discount: "0%",
+      image: Noodles,
+    },
+    {
+      id: 5,
+      name: "Kirisu Milk Full Cream",
+      category: "Food & Drinks",
+      price: 5.00,
+      stock: 1900,
+      rating: 3,
+      discount: "0%",
+      image: Milk,
+    },
+      {
+      id: 5,
+      name: "Khmer Banana",
+      category: "Food & Drinks",
+      price: 5.00,
+      stock: 1900,
+      rating: 3,
+      discount: "0%",
+      image: Banana,
     },
   ]);
 

@@ -13,7 +13,7 @@ function ProductCard({ id, image, name, brand, price, discount }) {
     : numPrice.toFixed(2);
 
   return (
-    <div className="product-card" onClick={() => navigate(`/product/${id}`)}>
+    <div className="product-card" onClick={() => navigate(`/customer/product/${id}`)}>
       
       {/* IMAGE WRAPPER */}
       <div className="product-image-wrapper">

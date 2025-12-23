@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Banner */
 .home-banner {
-  background: conic-gradient(from 82.48deg, #D9D9D9 0deg, #737373 360deg);
+  background: linear-gradient(135deg, #d9d9d9, #737373);
   text-align: center;
   padding: 120px 20px;
   color: #fff;
@@ -16,7 +16,7 @@
 
 .home-banner h1 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -24,8 +24,7 @@
   font-size: 1.2rem;
   margin-bottom: 30px;
   max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .home-button {
@@ -34,7 +33,7 @@
   border: none;
   padding: 15px 40px;
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -50,25 +49,15 @@
 .feature-card {
   flex: 1 1 250px;
   max-width: 300px;
-  border: 1px solid #8C8C8C;
+  border: 1px solid #8c8c8c;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
   text-align: center;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-.feature-card h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.feature-card p {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-/* Stats Section */
+/* Stats */
 .home-stats {
   display: flex;
   justify-content: center;
@@ -78,83 +67,60 @@
 }
 
 .stat-card {
-  background-color: transparent;
-  border: 1px solid #8C8C8C;
-  box-shadow: 6px 6px 6px 4px #000000;
-  border-radius: 20px;
   width: 250px;
   height: 150px;
+  border-radius: 20px;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .stat-number {
-  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
   font-weight: 700;
-  font-size: 35px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
 }
 
 .stat-label {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.1px;
-  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* Testimonials */
-/* Testimonials Section */
 .home-testimonials {
-  display: grid;
+  display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   padding: 80px 20px;
   flex-wrap: wrap;
 }
 
-/* Individual Card */
 .testimonial-card {
-  width: 531px;
-  min-height: 175px;
-  border: 1px solid #8c8c8c;
+  width: 500px;
+  min-height: 180px;
   border-radius: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  transform: rotate(-5deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Center content horizontally */
-  background-color: #fff;
-  box-shadow: 6px 6px 6px 4px rgba(0,0,0,0.2);
-}
-
-/* User Name */
-.testimonial-user {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000;
-  margin-bottom: 10px;
-  text-align: center; /* Ensure text is centered */
-}
-
-/* Testimonial Text */
-.testimonial-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
-  color: #000;
+  padding: 25px;
+  background: #fff;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transform: rotate(-3deg);
 }
 
+.testimonial-card:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.testimonial-user {
+  font-size: 18px;
+  font-weight: 700;
+}
 
 /* Pricing */
 .home-pricing {
@@ -167,24 +133,12 @@
 }
 
 .pricing-card {
-  background: #ffffff;
-  flex: 1 1 250px;
+  background: #fff;
   max-width: 300px;
-  border: 1px solid #8C8C8C;
-  border-radius: 20px;
   padding: 30px;
+  border-radius: 20px;
   text-align: center;
-}
-
-.pricing-card h3 {
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.pricing-card p {
-  font-size: 15px;
-  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .pricing-card button {
@@ -197,9 +151,21 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 1024px) {
-  .home-features, .home-testimonials, .home-pricing {
+@media (max-width: 768px) {
+  .home-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-features,
+  .home-stats,
+  .home-pricing {
     flex-direction: column;
     align-items: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 90%;
+    transform: none;
   }
 }

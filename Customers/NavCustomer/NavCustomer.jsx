@@ -23,28 +23,28 @@ function NavCustomer() {
   return (
     <nav className="customer-nav">
       {/* Logo */}
-      <div className="customer-logo" onClick={() => navigate("/homecustomer")}>
+      <div className="customer-logo" onClick={() => navigate("/customer/home")}>
         <img src={logo} alt="GoCart" />
       </div>
 
       {/* Center Links */}
       <div className="customer-links">
         <NavLink
-          to="/homecustomer"
+          to="/customer/home"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           HOME
         </NavLink>
 
         <NavLink
-          to="/products"
+          to="/customer/products"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           PRODUCTS
         </NavLink>
 
         <NavLink
-          to="/promotion"
+          to="/customer/promotion"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           PROMOTION
@@ -68,12 +68,12 @@ function NavCustomer() {
           size={24}
           color="#000"
           style={{ cursor: "pointer" }}
-          onClick={() => navigate("/cart")}
+          onClick={() => navigate("/customer/cart")}
         />
 
         <div
           className="profile-btn"
-          onClick={() => navigate("/account")}
+          onClick={() => navigate("/customer/account")}
         >
           👤
         </div>

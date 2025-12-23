@@ -1,7 +1,70 @@
-.seller-account {
+/* Copy SellerNav styles for header */
+.seller-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.seller-logo img {
+  height: 50px;
+}
+
+.seller-links {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.seller-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.seller-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.seller-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.seller-user {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.user-name,
+.user-role {
+  margin: 0;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #555;
+}
+
+/* PROFILE PAGE STYLES */
+.admin-account {
   background: #f7f7f7;
   min-height: 100vh;
-  padding: 140px 100px;
+  padding: 100px 80px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -11,14 +74,12 @@
   margin-bottom: 30px;
 }
 
-/* Main Card */
 .profile-card {
   background: #ffffff;
   border-radius: 10px;
   padding: 40px;
 }
 
-/* Header */
 .profile-header {
   display: flex;
   align-items: center;
@@ -29,16 +90,15 @@
 .avatar {
   width: 150px;
   height: 150px;
-  background: #d9d9d9;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.seller-name {
+.admin-name {
   font-size: 45px;
   font-weight: 500;
 }
 
-/* Stats */
 .stats {
   display: flex;
   gap: 30px;
@@ -53,11 +113,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
 }
 
-/* Form */
 .form-section {
   max-width: 1038px;
 }
@@ -88,39 +147,33 @@
   resize: none;
 }
 
-/* Save Button */
-.save-btn {
+.save-btn,
+.logout-btn {
   margin-top: 30px;
   width: 221px;
   height: 69px;
-  background: rgba(217, 217, 217, 0.5);
   border-radius: 10px;
   font-size: 20px;
-  font-weight: 300;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.save-btn {
+  background: rgba(217, 217, 217, 0.5);
+  border: none;
 }
 
 .save-btn:hover {
   background: rgba(217, 217, 217, 0.8);
 }
 
-/* Logout Button */
 .logout-btn {
-  margin-top: 30px;          /* same as save */
-  width: 221px;               /* same as save */
-  height: 69px;               /* same as save */
-  background: #979494;        /* grey background */
+  background: #979494;
   color: white;
   border: none;
-  border-radius: 10px;        /* same radius as save */
-  font-size: 20px;            /* same font size */
-  font-weight: 500;           /* slightly bolder for contrast */
-  cursor: pointer;
-  transition: 0.3s;
+  /* margin-left: 20px; */
 }
 
 .logout-btn:hover {
-  background: #d9363e;        /* hover color */
+  background: #d9363e;
 }
-

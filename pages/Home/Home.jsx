@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import './Home.css';
-import Nav from '../../components/Nav/Nav';
-import Footer from '../../components/Footer/Footer';
+import "./Home.css";
+import Nav from "../../components/Nav/Nav";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <div className="home-container">
       <Nav />
@@ -13,11 +14,11 @@ const Home = () => {
       {/* Banner */}
       <section className="home-banner">
         <h1>Welcome to Gocart</h1>
-        <p>Your intelligent e-commerce platform for smarter inventory management and personalized shopping experiences.</p>
-        <button
-          className="home-button"
-          onClick={() => navigate("/login")}
-        >
+        <p>
+          Your intelligent e-commerce platform for smarter inventory management
+          and personalized shopping experiences.
+        </p>
+        <button className="home-button" onClick={() => navigate("/login")}>
           Get Started
         </button>
       </section>
@@ -62,14 +63,15 @@ const Home = () => {
       <section className="home-testimonials">
         <div className="testimonial-card">
           <p className="testimonial-text">
-            “Gocart helped me avoid stockouts and keep my inventory optimized effortlessly!”
+            “Gocart helped me avoid stockouts and keep my inventory optimized
+            effortlessly!”
           </p>
           <div className="testimonial-user">User 1</div>
         </div>
 
         <div className="testimonial-card">
           <p className="testimonial-text">
-            “I love the personalized recommendations - it made shopping fast and fun”
+            “I love the personalized recommendations – it made shopping fast and fun.”
           </p>
           <div className="testimonial-user">User 2</div>
         </div>

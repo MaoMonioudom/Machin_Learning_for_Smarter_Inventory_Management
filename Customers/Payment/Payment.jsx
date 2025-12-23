@@ -18,7 +18,7 @@ function Payment() {
     alert("Payment successful!");
     localStorage.removeItem("cart");
     localStorage.removeItem("delivery");
-    navigate("/homecustomer");
+    navigate("/customer/home");
   };
 
   return (
@@ -49,7 +49,7 @@ function Payment() {
         </section>
 
         <div className="payment-buttons">
-          <button onClick={() => navigate("/delivery")}>Back</button>
+          <button onClick={() => navigate("/customer/delivery")}>Back</button>
           <button onClick={handleConfirmPayment}>Confirm Payment</button>
         </div>
       </div>

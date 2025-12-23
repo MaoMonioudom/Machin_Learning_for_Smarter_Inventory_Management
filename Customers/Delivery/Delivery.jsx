@@ -30,7 +30,7 @@ function Delivery() {
     localStorage.setItem("delivery", JSON.stringify(form));
 
     // navigate to payment page
-    navigate("/payment");
+    navigate("/customer/payment");
   };
 
   return (
@@ -97,7 +97,7 @@ function Delivery() {
           </label>
 
           <div className="delivery-buttons">
-            <button type="button" onClick={() => navigate("/cart")}>
+            <button type="button" onClick={() => navigate("/customer/cart")}>
               Back
             </button>
             <button type="button" onClick={handleProceed}>

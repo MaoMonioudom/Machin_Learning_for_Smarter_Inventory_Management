@@ -11,28 +11,73 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // Hardcoded accounts
-  const customerAccount = { email: "customer@example.com", password: "cust123" };
-  const sellerAccount = { email: "seller@example.com", password: "sell123" };
-  const adminAccount = { email: "admin@example.com", password: "admin123" };
+  // Hardcoded accounts with roles
+  const accounts = [
+    { 
+      email: "customer@example.com", 
+      password: "cust123", 
+      role: "customer", 
+      name: "John Customer",
+      redirect: "/customer/account" 
+    },
+    { 
+      email: "seller@example.com", 
+      password: "sell123", 
+      role: "seller", 
+      name: "Jane Seller",
+      redirect: "/seller/account" 
+    },
+    { 
+      email: "admin@example.com", 
+      password: "admin123", 
+      role: "admin", 
+      name: "Techleng Tang",
+      redirect: "/admin/profile" 
+    },
+  ];
 
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (email === customerAccount.email && password === customerAccount.password) {
-      navigate("/homecustomer");
-    } else if (email === sellerAccount.email && password === sellerAccount.password) {
-      navigate("/seller/account");
-    } else if (email === adminAccount.email && password === adminAccount.password) {
-      navigate("/homeadmin");
+    // Find matching account
+    const matchedAccount = accounts.find(
+      account => account.email === email && account.password === password
+    );
+
+    if (matchedAccount) {
+      // Store user data in localStorage
+      const userData = {
+        email: matchedAccount.email,
+        role: matchedAccount.role,
+        name: matchedAccount.name,
+        isAuthenticated: true,
+        loginTime: new Date().toISOString()
+      };
+      
+      localStorage.setItem("user", JSON.stringify(userData));
+      
+      // Navigate to appropriate page
+      navigate(matchedAccount.redirect);
     } else {
       alert("Invalid email or password!");
     }
   };
 
   const handleGoogleLogin = () => {
-    alert("Google OAuth integration will go here!");
-    navigate("/homecustomer"); // demo
+    // For demo purposes, create a customer account with Google
+    const googleUser = {
+      email: "googleuser@example.com",
+      role: "customer",
+      name: "Google User",
+      isAuthenticated: true,
+      loginTime: new Date().toISOString()
+    };
+    
+    localStorage.setItem("user", JSON.stringify(googleUser));
+    alert("Google login successful!");
+    navigate("/seller/account");
+    navigate("/customer/account");
+    navigate("/admin/profile");
   };
 
   return (
@@ -69,6 +114,14 @@ function Login() {
 
           <div className="auth-footer">
             Don't have an account? <a href="/register">Sign Up</a>
+          </div>
+          
+          {/* Demo credentials note */}
+          <div className="demo-credentials" style={{ marginTop: '20px', fontSize: '12px', color: '#666' }}>
+            <p><strong>Demo Credentials:</strong></p>
+            <p>Admin: admin@example.com / admin123</p>
+            <p>Seller: seller@example.com / sell123</p>
+            <p>Customer: customer@example.com / cust123</p>
           </div>
         </form>
       </div>

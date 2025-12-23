@@ -42,7 +42,7 @@ function ProductDetail() {
       });
     }
     localStorage.setItem("cart", JSON.stringify(cart));
-    navigate("/cart");
+    navigate("/customer/cart");
   };
 
   const recommendedProducts = productsData

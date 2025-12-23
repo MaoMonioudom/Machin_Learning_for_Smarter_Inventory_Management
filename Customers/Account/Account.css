@@ -87,20 +87,18 @@
 
 .register-btn,
 .logout-btn {
-  flex: 1;
-  padding: 12px 18px;
-  border-radius: 6px;
-  font-weight: 500;
+  margin-top: 30px;
+  width: 221px;
+  height: 69px;
+  border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
-  text-align: center;
-  border: 1px solid #000; /* same border for both */
 }
 
 /* Register Button */
 .register-btn {
-  background-color: #fff;
-  color: #000;
+  background: rgba(217, 217, 217, 0.8);
 }
 
 .register-btn:hover {
@@ -116,6 +114,8 @@
 .logout-btn:hover {
   background-color: #e33b3f;
 }
+
+
 
 /* Responsive */
 @media (max-width: 480px) {

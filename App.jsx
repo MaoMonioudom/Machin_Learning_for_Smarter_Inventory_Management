@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Landing from './pages/Landing/Landing';
 import Home from './pages/Home/Home';  
 import Login from "./pages/Login/Login";
@@ -22,7 +22,7 @@ import Payment from "./customers/Payment/Payment";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
@@ -37,14 +37,14 @@ const App = () => {
         <Route path="/homecustomer" element={<HomeCustomer />} />
         <Route path="/products" element={<Products />} />   
         <Route path="/promotion" element={<Promotion />} />
-        <Route path="/product/:id" element={    <ProductDetail />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />   
         <Route path="/registerseller" element={<RegisterSeller />} />
         <Route path="/account" element={<CAccount />} />
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/payment" element={<Payment />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

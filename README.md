@@ -1,5 +1,4 @@
 # Machine_Learning_for_Smarter_Inventory_Management
-## 📌 Project Overview
 
 ## 📌 Project Introduction
 

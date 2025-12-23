@@ -1,18 +1,14 @@
-# React + Vite
+# Machine_Learning_for_Smarter_Inventory_Management
+## 📌 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Introduction
 
-Currently, two official plugins are available:
+This project is a Khmer e-commerce web application designed to provide a modern online shopping experience. The website features **seven product categories**: Books, Food & Drinks, Accessories, Clothing, Electronics, Household Items, and Skincare. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Beyond a standard e-commerce interface, the platform leverages **machine learning techniques** to enhance user experience and business operations:
 
-## React Compiler
+- **Sales Forecasting**: Predicts future demand for products to help with inventory planning and stock management.  
+- **Product Recommendation System**: Suggests relevant products to users based on their browsing and purchase behavior, improving engagement and sales.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The project focuses on **frontend development with React**, **clean UI design**, and **scalable architecture** to support future backend and data-driven enhancements.
 
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
